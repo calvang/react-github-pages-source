@@ -1,4 +1,10 @@
+* { margin-top: 0;
+    margin-bottom: 0;
+}
+
 .App {
+  margin-top: 0px;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -13,6 +19,10 @@
   }
 }
 
+.header h2 {
+  margin-top:0;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,6 +31,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  margin: 0;
+  background-color: #282c34;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
   color: white;
 }
 
@@ -35,4 +55,104 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bar-item {
+  padding:8px 16px;
+  float:right;
+  width:auto;
+  border:none;
+  display:block;
+  font-size: calc(5px + 2vmin);
+  outline:0
+}
+
+.title-item {
+  padding:0px 16px;
+  float:left;
+  width:auto;
+  border:none;
+  display:block;
+  font-size: calc(10px + 2vmin);
+  outline:0
+}
+
+.title {
+  border:none;
+  display:inline-block;
+  padding:0px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.button {
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  border-right:1px solid #bbb;
+}
+
+.navbar {
+  margin:0;
+  padding:15px;
+  overflow:hidden;
+  background-color: #555;
+}
+
+.bottombar {
+  margin:0;
+  padding:8px;
+  overflow:hidden;
+  background-color: #555;
+}
+
+.bottom {
+  padding:8px 16px;
+  float:right;
+  width:auto;
+  border:none;
+  display:block;
+  font-size: calc(5px + 2vmin);
+  outline:0
+}
+
+.padded-bottom {
+  margin-bottom: 3 cm;
+  padding:20px;
+}
+
+.padded-bottom-left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3 cm;
+  padding:20px;
+}
+
+.padded-top {
+  margin-top: 3 cm;
+  padding:20px;
+}
+
+a {
+  color:white;
+  padding:14px 16px;
+}
+
+a:hover:not(.active) {
+  background-color: #444;
 }
